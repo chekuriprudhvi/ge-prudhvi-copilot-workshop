@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "budgetwise-app", "budgetwise-app", "{286948A9-0129-7B66-ADBC-FD3C1BBF9607}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BudgetWise.Api", "budgetwise-app\backend\BudgetWise.Api.csproj", "{3352F4D9-5D3F-4E9C-B7DD-C2742A341CE1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3352F4D9-5D3F-4E9C-B7DD-C2742A341CE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3352F4D9-5D3F-4E9C-B7DD-C2742A341CE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3352F4D9-5D3F-4E9C-B7DD-C2742A341CE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3352F4D9-5D3F-4E9C-B7DD-C2742A341CE1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3352F4D9-5D3F-4E9C-B7DD-C2742A341CE1} = {286948A9-0129-7B66-ADBC-FD3C1BBF9607}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {776763E0-5445-4041-B2C7-4F5D1B514071}
+	EndGlobalSection
+EndGlobal

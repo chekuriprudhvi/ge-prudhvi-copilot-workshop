@@ -1,0 +1,50 @@
+{
+  "name": "BudgetWise - Advanced Copilot Workshop (.NET)",
+  "image": "mcr.microsoft.com/devcontainers/dotnet:8.0",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "20"
+    }
+  },
+  "hostRequirements": {
+    "cpus": 4
+  },
+  "forwardPorts": [5000, 5173],
+  "portsAttributes": {
+    "5000": {
+      "label": ".NET API",
+      "onAutoForward": "notify"
+    },
+    "5173": {
+      "label": "React Frontend",
+      "onAutoForward": "notify"
+    }
+  },
+  "postCreateCommand": "cd budgetwise-app/backend && dotnet restore && cd ../frontend && npm install",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "ms-dotnettools.csharp",
+        "ms-dotnettools.csdevkit",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "bradlc.vscode-tailwindcss"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "dotnet.defaultSolution": "budgetwise-app/backend/BudgetWise.Api.csproj",
+        "[csharp]": {
+          "editor.defaultFormatter": "ms-dotnettools.csharp"
+        },
+        "[typescript]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[typescriptreact]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        }
+      }
+    }
+  }
+}
