@@ -1,4 +1,4 @@
-import type { Expense, Category, ExpenseSummary } from '../types';
+import type { Expense, Category, ExpenseSummary, UserProfile } from '../types';
 
 /**
  * Mock data for development when the backend is not available
@@ -154,4 +154,16 @@ export const mockUser = {
   email: 'demo@budgetwise.com',
   firstName: 'Alex',
   lastName: 'Johnson',
+};
+
+export const mockProfile: UserProfile = {
+  id: 1,
+  username: 'demo',
+  email: 'demo@budgetwise.com',
+  firstName: 'Alex',
+  lastName: 'Johnson',
+  bio: 'Personal finance enthusiast focused on smart budgeting and mindful spending. Tracking every dollar to reach financial freedom.',
+  location: 'San Francisco, CA',
+  memberSince: '2024-01-15',
+  avatarInitials: 'AJ',
 };
