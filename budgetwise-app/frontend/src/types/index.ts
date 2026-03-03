@@ -53,6 +53,19 @@ export interface ExpenseSummary {
   categories: Category[];
 }
 
+// Profile types
+export interface UserProfile {
+  id: number;
+  username: string;
+  email: string;
+  firstName: string;
+  lastName: string;
+  bio: string;
+  location: string;
+  memberSince: string;
+  avatarInitials: string;
+}
+
 // TODO: Lab 3 - Add Budget types
 // export interface Budget {
 //   id: number;
